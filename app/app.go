@@ -47,6 +47,7 @@ import (
 
 	"example/docs"
 	examplemodulekeeper "example/x/example/keeper"
+	tokenfactorymodulekeeper "example/x/tokenfactory/keeper"
 )
 
 const (
@@ -98,7 +99,8 @@ type App struct {
 	ICAHostKeeper       icahostkeeper.Keeper
 	TransferKeeper      ibctransferkeeper.Keeper
 
-	ExampleKeeper examplemodulekeeper.Keeper
+	ExampleKeeper      examplemodulekeeper.Keeper
+	TokenfactoryKeeper tokenfactorymodulekeeper.Keeper
 	// this line is used by starport scaffolding # stargate/app/keeperDeclaration
 
 	// simulation manager
@@ -179,6 +181,7 @@ func New(
 		&app.CircuitBreakerKeeper,
 		&app.ParamsKeeper,
 		&app.ExampleKeeper,
+		&app.TokenfactoryKeeper,
 	); err != nil {
 		panic(err)
 	}
