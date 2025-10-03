@@ -47,6 +47,7 @@ npm run build
 create front end
 ```
 ignite scaffold vue
+ignite generate composables
 cd vue
 pnpm install
 pnpm dev
