@@ -1,6 +1,11 @@
 # example
 **example** is a blockchain built using Cosmos SDK and Tendermint and created with [Ignite CLI](https://ignite.com/cli).
 
+Copier l'executable dans le repertoire courant
+```
+cp /home/berthier/go/bin/exampled .
+```
+
 Commande pour créer un shitcoin
 ```
 ./exampled tx tokenfactory create-denom \
