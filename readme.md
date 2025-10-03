@@ -52,3 +52,8 @@ cd vue
 pnpm install
 pnpm dev
 ```
+
+## Keplr wallet
+
+Wallet Name: Cosmos Wallet
+password: dsgsdgsdgs11222
