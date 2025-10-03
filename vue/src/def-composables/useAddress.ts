@@ -4,14 +4,14 @@ import { useClient } from "@/composables/useClient";
 
 const useAddressInstance = () => {
   const client = useClient();
-  const address = ref("cosmos16tvtzq8y60caw6lf3g93jual4w5ph4py6j57nu");
+  const address = ref("cosmos166a9lfw3zpjr7tc8z9j9gpcx92clvct2m026j7");
   const setAddress = async () => {
     if (client.signer) {
       const [{ address: rawAddress }] = await client.signer.getAccounts();
       console.log("rawAddress", rawAddress);
       address.value = rawAddress;
     } else {
-      address.value = "cosmos16tvtzq8y60caw6lf3g93jual4w5ph4py6j57nu";
+      address.value = "cosmos166a9lfw3zpjr7tc8z9j9gpcx92clvct2m026j7";
     }
   };
   client.on("signer-changed", () => {
