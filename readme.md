@@ -1,12 +1,12 @@
 # example
 **example** is a blockchain built using Cosmos SDK and Tendermint and created with [Ignite CLI](https://ignite.com/cli).
 
-Copier l'executable dans le repertoire courant
+copy the executable in the current directory
 ```
 cp /home/berthier/go/bin/exampled .
 ```
 
-Commande pour créer un shitcoin
+create a memecoin
 ```
 ./exampled tx tokenfactory create-denom \
   "Ced mega big brain token" \
@@ -19,8 +19,8 @@ Commande pour créer un shitcoin
   --from cosmos1rygesaewpfh70j39msc97uph3gptf08q2myxjm
 ```
 
-Pour utiliser le buf gen local il faut
-dans le fichier bug.gen.ts.yaml
+In bug.gen.ts.yaml use local proto generator to avoid 
+rate limite
 ```
 plugins:
   - local: protoc-gen-ts_proto
@@ -28,7 +28,7 @@ plugins:
 
 generate ts client
 ```
-ignite generate composables
+ignite chain serve (build and generate the proto files)
 ignite generate ts-client
 ```
 
