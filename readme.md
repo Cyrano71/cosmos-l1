@@ -39,7 +39,7 @@ ignite generate ts-client
 
 generate example-ts-client
 in ts-client folder
-``
+```
 npm install
 npm run build
 ```
