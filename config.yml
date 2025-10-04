@@ -1,24 +1,25 @@
 validation: sovereign
 version: 1
+chain_id: "fatPikaChain"
 accounts:
     - name: alice
       coins:
         - 20000token
-        - 200000000stake
+        - 200000000fatPikaToken
     - name: bob
       coins:
         - 10000token
-        - 100000000stake
+        - 100000000fatPikaToken
     - name: batman
       coins:
         - 10000token
-        - 100000000stake
+        - 100000000fatPikaToken
       mnemonic: private scheme nerve gallery satoshi flavor grow dial embrace plug taste diary
 faucet:
     name: bob
     coins:
         - 5token
-        - 100000stake
+        - 100000fatPikaToken
 client:
     typescript:
         path: ts-client
@@ -26,11 +27,11 @@ client:
         path: vue/src/composables
     openapi:
         path: docs/static/openapi.json
-default_denom: stake
+default_denom: fatPikaToken
 validators:
     - name: alice
-      bonded: 100000000stake
+      bonded: 100000000fatPikaToken
     - name: validator1
-      bonded: 200000000stake
+      bonded: 200000000fatPikaToken
     - name: validator2
-      bonded: 100000000stake
+      bonded: 100000000fatPikaToken

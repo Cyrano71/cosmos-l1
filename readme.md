@@ -21,7 +21,7 @@ create a memecoin
   "https://example.com" \
   1000000000000 \
   true \
-  --from cosmos16tvtzq8y60caw6lf3g93jual4w5ph4py6j57nu
+  --from cosmos166a9lfw3zpjr7tc8z9j9gpcx92clvct2m026j7
 ```
 
 In bug.gen.ts.yaml use local proto generator to avoid 
@@ -57,3 +57,7 @@ pnpm dev
 
 Wallet Name: Cosmos Wallet
 password: dsgsdgsdgs11222
+
+```
+panda announce give finish express atom inject goat december engine harvest vintage
+```

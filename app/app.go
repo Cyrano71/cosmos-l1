@@ -52,7 +52,7 @@ import (
 
 const (
 	// Name is the name of the application.
-	Name = "example"
+	Name = "fatPikaChain"
 	// AccountAddressPrefix is the prefix for accounts addresses.
 	AccountAddressPrefix = "cosmos"
 	// ChainCoinType is the coin type of the chain.
@@ -109,7 +109,7 @@ type App struct {
 
 func init() {
 
-	sdk.DefaultBondDenom = "stake"
+	sdk.DefaultBondDenom = "fatPikaToken"
 
 	var err error
 	clienthelpers.EnvPrefix = Name
